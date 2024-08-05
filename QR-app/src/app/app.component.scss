@@ -1,0 +1,36 @@
+@use '../styles.scss' as globalStyles;
+
+.container {
+  background-color: globalStyles.$white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 13px;
+  width: min-content;
+  padding: 1rem;
+
+
+  .img {
+    border-radius: 10px;
+  }
+
+  .text-container {
+    max-width: 85%;
+
+    .title {
+      font-size: 20px;
+      font-weight: 700;
+      text-align: center;
+      color: globalStyles.$slate900;
+    }
+
+    .body {
+      font-size: 15px;
+      font-weight: 400;
+      text-align: center;
+      color: globalStyles.$slate500;
+      margin-bottom: 2rem;
+    }
+  }
+}
